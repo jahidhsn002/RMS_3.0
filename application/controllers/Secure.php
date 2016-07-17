@@ -62,6 +62,7 @@ class Secure extends CI_Controller {
 			if($query != null){
 				$this->session->set_userdata('app_login', 'success');
 				foreach($query as $data){
+					$this->session->set_userdata('user_id', $data->id);
 					$this->session->set_userdata('user_name', $data->name);
 					$this->session->set_userdata('user_email', $data->email);
 					$this->session->set_userdata('user_roll', $data->roll);

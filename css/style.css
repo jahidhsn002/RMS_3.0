@@ -3,10 +3,10 @@ body{
 	background: #ffffff;
 }
 
-input[type="text"],input[type="submit"],textarea,input[type="password"],input[type="email"]{
-	border-radius: 1px;
-	margin-top: 1px;
-	margin-bottom: 1px;
+input[type="text"],input[type="submit"],textarea,input[type="password"],input[type="email"],select,.btn{
+	border-radius: 1px !important;
+	margin-top: 1px !important;
+	margin-bottom: 1px !important;
 }
 
 #body{
@@ -14,7 +14,7 @@ input[type="text"],input[type="submit"],textarea,input[type="password"],input[ty
 	border-left: 1px solid #e7e7e7;
 	border-right: 1px solid #e7e7e7;
 	border-bottom: 1px solid #e7e7e7;
-	height: 98vh;
+	min-height: 98vh;
 }
 
 .navbar{
@@ -67,4 +67,33 @@ input[type="text"],input[type="submit"],textarea,input[type="password"],input[ty
 	margin-left: auto;
 	margin-right: auto;
 	padding: 10px;
+}
+
+.footer_line {
+    position: fixed;
+    bottom: 5px;
+    right: 15px;
+}
+
+.img-center{
+	margin: auto;
+}
+
+.content{
+    display: block;
+    background: #ffffff;
+    border: 1px solid #dddddd;
+}
+
+.tbl.content {
+    border-radius: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.slip {
+    max-width: 300px;
+    font-family: monospace;
+    background: #ffffff;
+    margin: auto;
 }

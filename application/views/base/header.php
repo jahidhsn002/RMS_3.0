@@ -20,7 +20,7 @@
 		<![endif]-->
 	</head>
 	<body>
-		<div id="body">
+		<div id="body" class="clearfix">
 			<nav class="navbar navbar-default">
 				<div class="container-fluid">
 					<div class="navbar-header">
@@ -35,59 +35,72 @@
 						<ul class="nav navbar-nav">
 							<li class="active"><a href="#">RMS 3.0</a></li>
 							<li class="dropdown">
-								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Table
-								<span class="caret"></span></a>
-								<ul class="dropdown-menu">
-									<li><a href="<?php echo site_url("table"); ?>">Manage</a></li>
-									<li><a href="<?php echo site_url("table/add"); ?>">New Table</a></li>
-								</ul>
-							</li>
-							<li class="dropdown">
 								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Food
 								<span class="caret"></span></a>
 								<ul class="dropdown-menu">
-									<li><a href="#">Manage</a></li>
-									<li><a href="#">New Food</a></li>
-									<li><a href="#">Category</a></li>
-									<li><a href="#">Printing</a></li>
-								</ul>
-							</li>
-							<li class="dropdown">
-								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Stock
-								<span class="caret"></span></a>
-								<ul class="dropdown-menu">
-									<li><a href="#">Manage</a></li>
-									<li><a href="#">Wastage</a></li>
-									<li><a href="#">Stock Food</a></li>
+									<li><a href="<?php echo site_url("food"); ?>">Manage</a></li>
+									<li><a href="<?php echo site_url("food/add"); ?>">New Food</a></li>
+									<li class="divider"></li>
+									<li><a href="<?php echo site_url("category"); ?>">All Category</a></li>
+									<li><a href="<?php echo site_url("category/add"); ?>">Add Category</a></li>
+									<li class="divider"></li>
+									<li><a href="<?php echo site_url("printing"); ?>">View Printing</a></li>
+									<li><a href="<?php echo site_url("printing/add"); ?>">set Printing</a></li>
+									<li class="divider"></li>
+									<li><a href="<?php echo site_url("stock"); ?>">Stock</a></li>
 								</ul>
 							</li>
 							<li class="dropdown">
 								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Salse
 								<span class="caret"></span></a>
 								<ul class="dropdown-menu">
-									<li><a href="#">Checkout</a></li>
-									<li><a href="#">Partsale</a></li>
-									<li><a href="#">Order</a></li>
+									<li><a href="<?php echo site_url("salse/checkout"); ?>">Checkout</a></li>
+									<li><a href="<?php echo site_url("salse"); ?>">Partsale</a></li>
+									<li><a href="<?php echo site_url("salse/order"); ?>">Order</a></li>
+									<li class="divider"></li>
+									<li><a href="<?php echo site_url("supplier"); ?>">All Supplier</a></li>
+									<li><a href="<?php echo site_url("supplier/add"); ?>">Add Supplier</a></li>
+									<li class="divider"></li>
+									<li><a href="<?php echo site_url("stock/supply"); ?>">Supply Food</a></li>
 								</ul>
 							</li>
-							<li><a href="#">Order</a></li>
 							<li class="dropdown">
 								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Settings
 								<span class="caret"></span></a>
 								<ul class="dropdown-menu">
+								<li><a href="<?php echo site_url("discount"); ?>">Discount</a></li>
+									<li><a href="<?php echo site_url("discount/add"); ?>">Add Discount</a></li>
+									<li class="divider"></li>
+									<li><a href="<?php echo site_url("payment"); ?>">Payment</a></li>
+									<li><a href="<?php echo site_url("payment/add"); ?>">New Method</a></li>
+									<li class="divider"></li>
+									<li><a href="<?php echo site_url("user"); ?>">User Manager</a></li>
+									<li><a href="<?php echo site_url("user/add"); ?>">Set User</a></li>
+									<li class="divider"></li>
+									<li><a href="<?php echo site_url("table"); ?>">Manage</a></li>
+									<li><a href="<?php echo site_url("table/add"); ?>">New Table</a></li>
+									<li class="divider"></li>
 									<li><a href="<?php echo site_url("settings"); ?>">Basic</a></li>
 									<li><a href="<?php echo site_url("settings/store"); ?>">Store</a></li>
 									<li><a href="<?php echo site_url("settings/customize"); ?>">Customize</a></li>
 									<li><a href="<?php echo site_url("settings/fundamentals"); ?>">Fundamentals</a></li>
+									<li class="divider"></li>
 								</ul>
 							</li>
 							<li class="dropdown">
-								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Users
+								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Reports
 								<span class="caret"></span></a>
 								<ul class="dropdown-menu">
-									<li><a href="<?php echo site_url("user"); ?>">Manage</a></li>
-									<li><a href="<?php echo site_url("user/add"); ?>">Set User</a></li>
-									<li><a href="#">Help Doc</a></li>
+									<li><a href="<?php echo site_url("history"); ?>">Supply History</a></li>
+									<li><a href="<?php echo site_url("history/salse"); ?>">Partsale History</a></li>
+									<li><a href="#">About Us</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Help
+								<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Documentation</a></li>
 									<li><a href="#">About Us</a></li>
 								</ul>
 							</li>

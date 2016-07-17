@@ -1,7 +1,8 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
-	<div class="text-right container-fluid">
-				<h4><small>Development partnar Hub IT Solution</small></h4>
+			<div class="text-right container-fluid">
+				<br/>
+				<h4 class="footer_line"><small>Development partnar Hub IT Solution</small></h4>
 			</div>
 		</div>
 		<!-- jQuery -->
